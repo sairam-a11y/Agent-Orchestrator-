@@ -3,7 +3,6 @@ A sophisticated multi-agent ecosystem designed to transform complex goals into c
 
 🚀 Key Features
 Multi-Agent Orchestration: Specialized agents (Research, Dev, Legal, etc.) collaborating in parallel.
-
 Autonomous Reasoning: Employs a Thought → Action → Observation → Reflection loop.
 Advanced Memory: Dual-layer system featuring Short-Term context and Long-Term Vector storage.
 RAG Integration: Knowledge retrieval via embeddings for fact-based execution.
