@@ -1,0 +1,28 @@
+# Core
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-dotenv==1.0.1
+
+# LangChain
+langchain==0.2.6
+langchain-google-genai==1.0.10
+langchain-community==0.2.6
+langchain-core==0.2.11
+langchain-text-splitters==0.2.0
+
+# Vector DB
+chromadb==0.5.3
+
+# Database
+sqlalchemy==2.0.30
+asyncpg==0.29.0
+alembic==1.13.1
+
+# Tools
+aiohttp==3.9.5
+aiofiles==23.2.1
+requests==2.32.3
+
+# Auth / Utils
+pydantic==2.7.3
+python-multipart==0.0.9
