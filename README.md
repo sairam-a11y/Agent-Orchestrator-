@@ -1,178 +1,40 @@
 🧠 Universal Agentic AI Platform
+A sophisticated multi-agent ecosystem designed to transform complex goals into completed projects through autonomous planning, reasoning, and tool integration
 
-A multi-agent autonomous AI system where specialized AI agents collaborate to accomplish complex goals using planning, reasoning, tools, memory, and retrieval-augmented knowledge.
-
-Unlike traditional chatbots, this platform demonstrates Agentic AI, where AI systems plan tasks, use tools, retrieve knowledge, and coordinate multiple agents to complete objectives autonomously.
-
-🚀 Features
-
-Multi-Agent AI Collaboration
-
-Autonomous Task Planning
-
-Tool-Using AI Agents
-
-Retrieval-Augmented Generation (RAG)
-
-Short-Term and Long-Term Memory
-
-Vector Database Knowledge Retrieval
-
-Modular and Scalable Architecture
-
-Agent Workflow Monitoring
-
-💡 Example Workflow
-User Input
-Build a SaaS productivity tool
-Agent Execution Pipeline
-Planner Agent
-   ↓
-Research Agent
-   ↓
-Developer Agent
-   ↓
-Debug Agent
-   ↓
-Website Agent
-   ↓
-Decision Agent
-System Output
-
-The system automatically:
-
-researches competitors
-
-designs system architecture
-
-generates application code
-
-fixes bugs
-
-creates landing pages
-
-suggests pricing strategy
+🚀 Key Features
+Multi-Agent Orchestration: Specialized agents (Research, Dev, Legal, etc.) collaborating in parallel.
+Autonomous Reasoning: Employs a Thought → Action → Observation → Reflection loop.
+Advanced Memory: Dual-layer system featuring Short-Term context and Long-Term Vector storage.
+RAG Integration: Knowledge retrieval via embeddings for fact-based execution.
+Tool-Enabled: Native access to Web Search, Code Execution, APIs, and File Systems.
 
 🏗 System Architecture
-User Interface
-      │
-      ▼
-API Gateway (FastAPI)
-      │
-      ▼
-Agent Orchestrator
-      │
- ┌────┼─────────────────────────────────────┐
- ▼    ▼        ▼        ▼        ▼           ▼
-Planner Research Developer Debug Legal Decision
-Agent   Agent    Agent    Agent  Agent Agent
-      │
-      ▼
-Tool Layer
-(Web Search • Code Execution • APIs • File System)
+UI / API Gateway: Next.js frontend communicating via FastAPI.
+Orchestrator: The brain managing the Agent Workflow.
+Agent Layer: Specialized units (Planner, Developer, Debugger, etc.).
+Support Layers: Tool Layer (Execution), Memory Layer (Redis/Vector), and RAG Layer.
 
-      │
-      ▼
-Memory Layer
-(Short-Term Memory + Vector Database)
+🤖 Specialized Agent Squad
+Agent          Primary Responsibility
+Planner	      Deconstructs goals into actionable task sequences.
+Research	      Summarizes market data and technical documentation.
+Developer	   Writes system architecture and application code.
+Debug	         Automatically iterates on and fixes code errors.
+Website	      Builds UI components and landing pages.
+Legal/Decision	Manages compliance, risk, and strategic optimization.
 
-      │
-      ▼
-RAG Knowledge Layer
-(Embeddings + Retrieval)
-
-      │
-      ▼
-Databases
-(PostgreSQL • Redis • Vector Database)
-🤖 AI Agents
-Planner Agent
-
-Breaks the user goal into structured tasks.
-
-Research Agent
-
-Performs web searches and summarizes relevant knowledge.
-
-Developer Agent
-
-Generates software architecture and application code.
-
-Debug Agent
-
-Analyzes generated code and fixes errors automatically.
-
-Website Agent
-
-Creates landing pages and UI components.
-
-Legal Agent
-
-Analyzes contracts and compliance risks.
-
-Decision Agent
-
-Evaluates strategies and recommends optimal actions.
-
-Productivity Agent
-
-Manages tasks, scheduling, and workflow execution.
+💡 Example Workflow: "Build a SaaS Tool"
+Planner: Maps the development roadmap.
+Research: Analyzes competitors and tech stacks.
+Developer/Debug: Generates and refines the codebase.
+Website/Decision: Deploys the UI and sets a pricing strategy.
 
 🧰 Technology Stack
-Backend
+Orchestration: LangChain, CrewAI, LangGraph.
+Models: Claude / GPT.
+Backend: Python, FastAPI, PostgreSQL, Redis.
+Vector Ops: Chroma, Pinecone.
 
-Python
+Frontend: React, Next.js.
 
-FastAPI
-
-Agent Framework
-
-LangChain
-
-Multi-Agent Orchestration
-
-CrewAI / LangGraph
-
-AI Models
-
-Claude / GPT
-
-RAG System
-
-LangChain Retrieval Pipeline
-
-Vector Database
-
-Chroma
-
-Pinecone
-
-Databases
-
-PostgreSQL
-
-Redis
-
-Frontend
-
-React / Next.js
-
-Monitoring
-
-LangSmith
-
-🧠 Agent Reasoning Cycle
-
-Agents operate using an autonomous reasoning loop:
-
-Thought
- ↓
-Action
- ↓
-Observation
- ↓
-Reflection
- ↓
-Next Action
-
-This enables agents to plan, act, evaluate results, and improve decisions dynamically.
+Observability: LangSmith.
